@@ -1,0 +1,706 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  --title-color: #0b0a0a;
+  --text-color: #403a3a;
+  --text-color-light: #707070;
+  --container-color: #fafafa;
+  --container-color-alt: #f0efef;
+  --body-color: #fcfcfc;
+  --strong-color: #3f9ba1;
+  --cyan-color: #3f9ba1;
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes ==========*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== BASE ==========*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+  --title-color: #f2f2f2;
+  --text-color: #bfbfbf;
+  --container-color: #212121;
+  --container-color-alt: #181616;
+  --body-color: #2b2b2b;
+  --strong-color: #3f9ba1;
+  --cyan-color: #3f9ba1;
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme {
+  position: absolute;
+  right: 0;
+  top: 2.2rem;
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: var(--title-color);
+}
+
+/*========== Font size variables to scale cv ==========*/
+body.scale-cv {
+  --h1-font-size: 0.938rem;
+  --h2-font-size: 0.938rem;
+  --h3-font-size: 0.875rem;
+  --normal-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.688rem;
+}
+
+/*========== Generate PDF button ==========*/
+.generate-pdf {
+  display: none;
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.generate-pdf:hover {
+  color: var(--title-color);
+}
+
+/*========== Classes modified to reduce size and print on A4 sheet ==========*/
+.scale-cv .change-theme,
+.scale-cv .generate-pdf {
+  display: none;
+}
+
+.check-online {
+  display: none;
+}
+
+.scale-cv .check-online {
+  display: block;
+}
+
+.scale-cv .bd-container {
+  max-width: 595px;
+}
+
+.scale-cv .section {
+  padding: 0.25rem 0;
+}
+
+.scale-cv .section-title {
+  margin-bottom: 0.5rem;
+}
+
+
+.scale-cv .resume__left{
+  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+}
+
+.scale-cv .resume__right{
+  padding-right: 2rem;
+  padding-left: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+
+.scale-cv .home__img {
+  width: 90px;
+  height: 90px;
+}
+
+.scale-cv .home__container {
+  gap: 0.25rem;
+}
+
+.scale-cv .home__data {
+  gap: 0.25rem;
+}
+
+.scale-cv .home__address,
+.scale-cv .social__container {
+  gap: 0.5rem;
+}
+
+.scale-cv .home__icon,
+.scale-cv .social__icon,
+.scale-cv .interests__icon {
+  font-size: 1rem;
+}
+
+.scale-cv .experience__icon {
+  font-size: 0.33rem;
+}
+
+.scale-cv .education__container,
+.scale-cv .experience__container,
+.scale-cv .certificate__container {
+  gap: 1rem;
+}
+
+.scale-cv .education__time,
+.scale-cv .experience__time {
+  padding-right: 0.5rem;
+}
+
+.scale-cv .education__rounder,
+.scale-cv .experience__rounder {
+  width: 11px;
+  height: 11px;
+  margin-top: 0.22rem;
+}
+
+.scale-cv .education__line,
+.scale-cv .experience__line {
+  width: 1px;
+  height: 110%;
+  transform: translate(5px, 0);
+}
+
+.scale-cv .education__data,
+.scale-cv .experience__data {
+  gap: 0.25rem;
+}
+
+.scale-cv .skills__name {
+  margin-bottom: var(--mb-1);
+}
+
+.scale-cv .interests__container {
+  column-gap: 1rem;
+}
+
+body {
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  margin: 3rem 0;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+em {
+  color: var(--title-color);
+  font-style: normal;
+}
+
+strong {
+  color: var(--strong-color);
+}
+
+.cyan {
+  color: var(--cyan-color);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+sup { 
+  vertical-align: top; position: relative; top: -0.3em;
+}
+
+
+/*========== CLASS CSS ==========*/
+.section {
+  padding: 0.25rem 0;
+}
+
+.section-top {
+  margin-top: 0.75rem;
+}
+
+.section-title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-align: initial;
+  margin-bottom: 0.25rem;
+}
+
+/* To adjust icon location */
+ .iconify {
+  font-size: 1.0rem;
+  margin-right: 0.1rem;
+  margin-left: 0rem;
+  position: relative;
+  top: 5px;
+}
+
+.iconify2 {
+  margin-left: 1rem;
+}
+
+.iconify3 {
+  margin-bottom: 2.9rem;
+} 
+
+.corr_ref_icons {
+  position: relative;
+  top: 5px;
+}
+
+.skill__item {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.boxed-div {
+  border-radius: 0.75rem;
+  border: solid 2px #3f9ba1;
+  text-align: justify;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.scale-cv .custom-1 {
+  margin-top:0.7rem;
+}
+
+.scale-cv h4{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+
+
+/*========== LAYOUT ==========*/
+.bd-container {
+  max-width: 968px;
+  width: calc(100% - 3rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+
+
+/*========== HOME ==========*/
+.home {
+  position: relative;
+}
+
+.home__container {
+  gap: 0.25rem;
+}
+
+.home__data {
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.home__img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  justify-self: center;
+  margin-bottom: var(--mb-1);
+}
+
+.home__title {
+  font-size: var(--h1-font-size);
+}
+
+.home__profession {
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-);
+}
+
+.home__address {
+  gap: 0.5rem;
+}
+
+.home__information {
+  display: flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+}
+
+.home__icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+
+/*========== SOCIAL ==========*/
+.social__container {
+  /* grid-template-columns: max-content; */
+  gap: 1rem;
+}
+
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.sup__link {
+  display: inline-flex;
+  align-items: center;
+  font-size: x-small;
+  color: var(--text-color);
+}
+
+
+.social__link:hover {
+  color: var(--title-color);
+}
+
+.social__icon {
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 1px;
+}
+
+.experience__icon {
+  font-size: 0.4rem;
+  margin-right: 0.5rem;
+}
+
+/*========== PROFILE ==========*/
+.profile__description {
+  text-align: initial;
+  margin-bottom: 0.25rem;
+}
+
+/*========== EDUCATION AND EXPERIENCE ==========*/
+.education__content,
+.experience__content {
+  display: flex;
+}
+
+.education__time,
+.experience__time {
+  padding-right: 1rem;
+}
+
+.education__rounder,
+.experience__rounder {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--text-color-light);
+  border-radius: 50%;
+  margin-top: 0.25rem;
+}
+
+.education__line,
+.experience__line {
+  display: block;
+  width: 2px;
+  height: 110%;
+  background-color: var(--text-color-light);
+  transform: translate(7px, 0);
+}
+
+.education__data,
+.experience__data {
+  gap: 0.5rem;
+}
+
+.education__title,
+.experience__title {
+  font-size: var(--h3-font-size);
+}
+
+.education__studies,
+.experience__company {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+
+.education__year {
+  font-size: var(--smaller-font-size);
+}
+
+/*========== SKILLS AND LANGUAGES ==========*/
+.skills__content,
+.languages__content {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.languages__content {
+  gap: 0;
+}
+
+.skills__name,
+.languages__name {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-3);
+}
+
+.skills__circle,
+.languages__circle {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.skill__icon {
+  font-size: 2rem;
+  position: relative;
+  top: 1px;
+}
+
+.award__icon {
+  font-size: 1.5rem;
+}
+
+.skill__icon_smaller {
+  font-size: 1.4rem;
+  position: relative;
+  top: 1px;
+}
+
+.software__icon {
+  font-size: 1.5rem;
+  position: relative;
+  top: 5px;
+  margin-right: 0.5rem;
+}
+
+.software__icon_smaller {
+  font-size: 1.4rem;
+  position: relative;
+  top: -15px;
+  margin-right: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.pb-1 {
+  padding-bottom: 2.2rem;
+}
+
+.mt-2 {
+  margin-top: 0.2rem;
+  margin-bottom: -0.75rem;
+}
+
+/*========== CERTIFICATES ==========*/
+.certificate__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.certificate__description {
+  margin-bottom: var(--mb-1);
+}
+
+/*========== REFERENCES ==========*/
+.references__content {
+  gap: 0.25rem;
+}
+
+.references__subtitle {
+  color: var(--text-color-light);
+}
+
+.references__subtitle,
+.references__contact {
+  font-size: var(--smaller-font-size);
+}
+
+.references__title {
+  font-size: var(--h3-font-size);
+}
+
+.center {
+  text-align: center;
+}
+
+.color-blue {
+  color: #3f9ba1;
+}
+
+/*========== INTERESTS ==========*/
+.interests__container {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: var(--mb-2);
+  gap: 1.5rem;
+}
+
+.interests__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interests__icon {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  margin-bottom: 0.25rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* Scroll top */
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  background-color: var(--container-color-alt);
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+  visibility: hidden;
+}
+
+.scrolltop__icon {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.show-scroll {
+  visibility: visible;
+  bottom: 5rem;
+}
+
+/*========== MEDIA QUERIES ==========*/
+
+  .resume {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+  }
+
+  .resume__left {
+    background-color: var(--container-color-alt);
+  }
+
+  .resume__left,
+  .resume__right {
+    padding: 0 1.5rem;
+  }
+
+  .generate-pdf {
+    display: inline-block;
+  }
+
+
+  .references__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+
+  .softwares__container {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0.5rem;
+    /* row-gap: 0.1rem; */
+  }
+
+  .skills__container {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .languages__content {
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 3.5rem;
+  }
+
+  .interests__container {
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 1rem;
+  }
+
+  .link__container {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0.1rem;
+    /* row-gap: 0.1rem; */
+  }
+
+  .link__content {
+    gap: 0.05rem;
+    font-size: xx-small;
+  }
+
+  .content__link {
+    display: inline-flex;
+    align-items: center;
+    font-size: xx-small;
+    color: var(--text-color);
+  }
