@@ -154,12 +154,14 @@ body.scale-cv {
 }
 
 .scale-cv .home__address,
-.scale-cv .social__container {
+.scale-cv .social__container,
+.scale-cv .award__container {
   gap: 0.5rem;
 }
 
 .scale-cv .home__icon,
 .scale-cv .social__icon,
+.scale-cv .award__icon,
 .scale-cv .interests__icon {
   font-size: 1rem;
 }
@@ -272,6 +274,10 @@ sup {
   margin-top: 0.75rem;
 }
 
+.upper-section-top {
+  margin-top: 1.5rem;
+}
+
 .section-title {
   font-size: var(--h2-font-size);
   color: var(--title-color);
@@ -317,8 +323,8 @@ sup {
   margin-bottom: 0.5rem;
 }
 
-.scale-cv .custom-1 {
-  margin-top:0.7rem;
+.scale-cv .space-award {
+  margin-top:6rem;
 }
 
 .scale-cv h4{
@@ -391,13 +397,13 @@ sup {
 }
 
 
-/*========== SOCIAL ==========*/
-.social__container {
+/*========== SOCIAL AND AWARDS ==========*/
+.social__container, .award__container {
   /* grid-template-columns: max-content; */
   gap: 1rem;
 }
 
-.social__link {
+.social__link, .award__link {
   display: inline-flex;
   align-items: center;
   font-size: var(--small-font-size);
@@ -412,11 +418,11 @@ sup {
 }
 
 
-.social__link:hover {
+.social__link:hover, .award__link:hover {
   color: var(--title-color);
 }
 
-.social__icon {
+.social__icon, .award__icon {
   font-size: 1.4rem;
   margin-right: 0.5rem;
   position: relative;
@@ -486,6 +492,10 @@ sup {
 }
 
 /*========== SKILLS AND LANGUAGES ==========*/
+.scale-cv .space-skills {
+  margin-top:6rem;
+}
+
 .skills__content,
 .languages__content {
   grid-template-columns: repeat(2, 1fr);
@@ -550,6 +560,9 @@ sup {
   padding-bottom: 2.2rem;
 }
 
+.pb-01 {
+  padding-bottom: 1.85rem;
+}
 .mt-2 {
   margin-top: 0.2rem;
   margin-bottom: -0.75rem;
@@ -689,7 +702,7 @@ sup {
   }
 
   .link__container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 0.1rem;
     /* row-gap: 0.1rem; */
   }
