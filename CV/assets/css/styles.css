@@ -664,11 +664,21 @@ sup {
     background-color: var(--container-color-alt);
   }
 
-  .resume__left,
-  .resume__right {
-    padding: 0 1.5rem;
+  .resume__left {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
   }
 
+  .resume__right {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    
+  }
   .generate-pdf {
     display: inline-block;
   }
