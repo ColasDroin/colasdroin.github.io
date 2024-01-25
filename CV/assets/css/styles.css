@@ -242,6 +242,7 @@ strong {
   color: var(--strong-color);
 }
 
+
 .cyan {
   color: var(--cyan-color);
 }
@@ -286,6 +287,15 @@ sup {
   letter-spacing: 0.3rem;
   text-align: initial;
   margin-bottom: 0.25rem;
+}
+
+p.upper-space {
+  margin-top: 1rem;
+}
+
+p.center {
+  text-align: center;
+  margin: auto;
 }
 
 /* To adjust icon location */
