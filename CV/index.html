@@ -77,7 +77,7 @@
             <h2 class="section-title"><strong>Profile</strong></h2>
             <p class="profile__description">
               Data scientist with a background in computational physics, my main
-              interests include data visualization, mathematical modelling,
+              interests include data visualization,
               machine learning, web and software development.
             </p>
             <p class="profile__description">
@@ -166,14 +166,14 @@
                 <i class="bx bxl-github social__icon"></i>
                 github.com/ColasDroin
               </a>
-              <a
+              <!-- <a
                 href="https://scholar.google.co.uk/citations?user=HeBJPwwAAAAJ&hl=en"
                 target="_blank"
                 class="social__link"
               >
                 <i class="bx bxs-graduation social__icon"></i>
                 tinyurl.com/snhmxbhy (scholar)
-              </a>
+              </a> -->
 
               <a
                 href="https://colasdroin.github.io"
@@ -429,7 +429,6 @@
                     EPFL</span
                   >
                   <p class="experience__description">
-                    <i class="bx bxs-circle experience__icon"></i>
                     Developed a <em>web-application</em
                     ><sup>
                       <a
@@ -468,8 +467,10 @@
                   >
                   <p class="experience__description">
                     Worked on several computational biology projects as part of
-                    my PhD and post-doc. Was awarded the
-                    <strong>EPFL 8% PhD Thesis Distinction</strong
+                    my PhD and post-doc. Published in two
+                    <em>Nature-family journals</em>
+                    and was awarded the
+                    <em>EPFL 8% PhD Thesis Distinction</em
                     ><sup>
                       <a
                         href="https://www.epfl.ch/education/phd/fr/theses-primees/"
@@ -499,27 +500,50 @@
                 </div>
 
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">TEACHING ASSISTANT (TA)</h3>
+                  <h3 class="experience__title">MASTER THESES</h3>
                   <span class="experience__company"
-                    ><i class="bx bxs-circle experience__icon"></i>Autumns 2017
-                    to 2019 | <em>Head TA</em> | Dynamical systems in biology,
-                    EPFL
+                    ><i class="bx bxs-circle experience__icon"></i>Spring 2016 |
+                    IXXI-ENS-INRIA, Lyon
                   </span>
+                  <p class="experience__description">
+                    Data-driven study of social tie heterogeneities in real
+                    information cascades from a Twitter dataset (Python, R).
+                  </p>
                   <span class="experience__company"
-                    ><i class="bx bxs-circle experience__icon"></i>Spring 2017 |
-                    TA | Probabilities and statistics, EPFL
+                    ><i class="bx bxs-circle experience__icon"></i>Spring 2015 |
+                    Dassault Systèmes, Paris
                   </span>
-                  <span class="experience__company"
-                    ><i class="bx bxs-circle experience__icon"></i>2012 to 2014
-                    | Tutor | Mathematical physics, INSA
-                  </span>
+                  <p class="experience__description">
+                    Implementation of a hybrid deterministic-stochastic version
+                    of the Chemical Master Equation for faster simulations (C++,
+                    R).
+                  </p>
                 </div>
               </div>
             </div>
           </section>
-
           <br />
+          <!--========== TA EXPERIENCE ==========-->
+          <section class="references section" id="references">
+            <h2 class="section-title">
+              <strong>TEACHING EXPERIENCE</strong>
+            </h2>
+            <p></p>
+              <i class="bx bxs-circle experience__icon"></i><em>Head TA</em>,
+              Dynamical systems in biology, EPFL (Autumns 2017-2019)
+            </p>
+            <p>
+              <i class="bx bxs-circle experience__icon"></i>TA, Probabilities
+              and statistics, EPFL (Spring 2017)
+            </p>
+            <p>
+              <i class="bx bxs-circle experience__icon"></i>
+              Tutor, Mathematical physics, INSA (2012 to 2014)
+            </p>
 
+          </section>
+          <br />
+          <br />
           <!-- ========== TALKS ==========
           <section class="certificate section" id="certificates">
             <h2 class="section-title"><strong>Main talks</strong></h2>
@@ -574,21 +598,27 @@
             <p>
               <strong>Data visualization</strong>: Good knowledge of design
               principles, with a taste for meaningful, aesthetic visualization.
-              Preference for vector graphics, but also familiar with raster
-              graphics and image processing.
+              Preference for vector graphics, but also familiar with image processing.
             </p>
             <p class="center">
               <i class="bx bxs-circle experience__icon"></i>
+              <i class="bx bxs-circle experience__icon"></i>
+              <i class="bx bxs-circle experience__icon"></i>
             </p>
             <p>
-              <strong>Data analysis tools I use: </strong>
-              Jupyter, Poetry, Pytest, Numpy, Scipy, Numba, Pandas, Dash,
-              Scikit-learn, Pytorch, Statsmodels, Ipywidgets, Jinja2.
+              <strong>Languages: </strong>
+              Experienced Python developper (8y+), with occasional use of R,
+              Matlab and Julia. Used C/C++ in the past (Master thesis).
             </p>
             <p>
-              <strong>Data visualization tools I use: </strong>
-              Matplotlib, Seaborn, Plotly, Adobe Photoshop, Adobe Illustrator.
-              Processing/p5.js (beginner), D3.js (beginner).
+              <strong>Python packages: </strong>
+              Numpy, Scipy, Numba, Pandas, Dash, Scikit-learn, Pytorch,
+              Statsmodels, Ipywidgets, Beautiful Soup, Jinja2, openCV, Matplotlib, Seaborn, Plotly.
+            </p>
+            <p>
+              <strong>Visualization tools: </strong>
+              Adobe Photoshop, Adobe Illustrator,
+              Processing/p5.js (entry-level), D3.js (entry-level, learning).
             </p>
           </section>
 
@@ -598,17 +628,16 @@
               <strong>SOFTWARE ENGINEERING skills</strong>
             </h2>
             <p>
-              I am an experienced Python developper (8y+), used to work with
-              version control (git), unit testing (pytest), and CI/CD pipelines
-              (gitlab). The need for submitting large-scale simulations on HPC
-              clusters has led me to learn about SLURM and HTCondor, along with
-              Docker for reproducibility, and REST APIs for fetching data. As an
-              OS X user, and having developped mainly SSH-ing on Linux clusters,
-              I'm familiar with Unix systems and bash commands.
+              <strong>version control and CI/CD: </strong>
+              git, poetry, pytest, Docker, gitlab CI/CD
             </p>
             <p>
-              In the past, I have also been exposed to R (MS thesis), Matlab (as
-              a TA), Julia (PhD) and C++ (MS thesis).
+              <strong>High Performance Computing</strong>
+              SLURM and HTCondor
+            </p>
+            <p>
+              <strong>OS: </strong>
+              OS X, Linux (remote development), Windows (occasionally)
             </p>
           </section>
 
@@ -618,7 +647,7 @@
               <strong>WEB DEVELOPMENT skills</strong>
             </h2>
             <p>
-              I've learnt web-development through the creation of several apps
+              Created several several web-apps
               <sup>
                 <a
                   href="https://github.com/ColasDroin/collider-dashboard/tree/main"
@@ -643,7 +672,7 @@
                   >11</a
                 ></sup
               >
-              with Python Dash. I've also developed my own personal website with
+              with Python Dash. Also developed my own personal website with
               React<sup>
                 <a
                   href="https://colasdroin.github.io"
@@ -652,7 +681,7 @@
                   >5</a
                 ></sup
               >
-              and this CV<sup>
+              , ande made this CV<sup>
                 <a
                   href="https://colasdroin.github.io/CV/"
                   target="_blank"
@@ -660,12 +689,12 @@
                   >12</a
                 ></sup
               >
-              is made with HTML/CSS. My knowledge of JS frameworks remains
-              limited, but I'm actively learning (cf. left panel).
+              with HTML/CSS. Limited knowledge of JS frameworks, but actively
+              learning (cf. left panel).
             </p>
             <div class="skills__container bd-grid">
               <div class="references__content bd-grid">
-                <i class="skill__icon center si si-plotly"></i>
+                <i class="skill__icon_smaller center si si-plotly"></i>
                 <p class="references__title center">Dash (Plotly)</p>
                 <div class="center">
                   <i class="bx bxs-circle color-blue"></i>
@@ -677,7 +706,7 @@
               </div>
 
               <div class="references__content bd-grid">
-                <i class="skill__icon center bx bxl-html5"></i>
+                <i class="skill__icon_smaller center bx bxl-html5"></i>
                 <p class="references__title center">HTML</p>
                 <div class="center">
                   <i class="bx bxs-circle color-blue"></i>
@@ -689,7 +718,7 @@
               </div>
 
               <div class="references__content bd-grid">
-                <i class="skill__icon center bx bxl-css3"></i>
+                <i class="skill__icon_smaller center bx bxl-css3"></i>
                 <p class="references__title center">CSS</p>
                 <div class="center">
                   <i class="bx bxs-circle color-blue"></i>
@@ -701,7 +730,7 @@
               </div>
 
               <div class="references__content bd-grid">
-                <i class="skill__icon center bx bxl-javascript"></i>
+                <i class="skill__icon_smaller center bx bxl-javascript"></i>
                 <p class="references__title center">Javascript</p>
                 <div class="center">
                   <i class="bx bxs-circle color-blue"></i>
@@ -720,12 +749,11 @@
               <strong>SOFT skills</strong>
             </h2>
             <p>
-              My career has led me to develop good analytical thinking and
-              problem solving skills, along with time management when working
-              with strict deadlines. I've been involved in several international
-              collaborations, allowing to develop my communication skills for
-              conferences and poster presentations. Good pedagogical skills were
-              also needed to work as a TA.
+              Excellent problem-solving solving skills. Used to
+              work with strict deadlines. Excellent communication
+              (involved in several international collaborations, including
+              conferences and poster presentations). Autonomous with a collaborative
+              spirit.
             </p>
           </section>
 

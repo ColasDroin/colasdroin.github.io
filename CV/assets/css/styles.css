@@ -80,9 +80,9 @@ body.scale-cv {
   --h1-font-size: 0.938rem;
   --h2-font-size: 0.938rem;
   --h3-font-size: 0.875rem;
-  --normal-font-size: 0.813rem;
-  --small-font-size: 0.75rem;
-  --smaller-font-size: 0.688rem;
+  --normal-font-size: 0.88rem;
+  --small-font-size: 0.82rem;
+  --smaller-font-size: 0.693rem;
 }
 
 /*========== Generate PDF button ==========*/
@@ -334,7 +334,7 @@ p.center {
 }
 
 .scale-cv .space-award {
-  margin-top:6rem;
+  margin-top:3.6rem;
 }
 
 .scale-cv h4{
@@ -357,7 +357,11 @@ p.center {
   gap: 1rem;
 }
 
-
+.bd-grid-link {
+  display: grid;
+  column-gap: 0rem;
+  row-gap: 0.rem;
+}
 
 /*========== HOME ==========*/
 .home {
@@ -448,6 +452,8 @@ p.center {
 .profile__description {
   text-align: initial;
   margin-bottom: 0.25rem;
+  font-size: var(--small-font-size);
+
 }
 
 /*========== EDUCATION AND EXPERIENCE ==========*/
@@ -501,9 +507,10 @@ p.center {
   font-size: var(--smaller-font-size);
 }
 
+
 /*========== SKILLS AND LANGUAGES ==========*/
 .scale-cv .space-skills {
-  margin-top:6rem;
+  margin-top:1.4rem;
 }
 
 .skills__content,
@@ -571,7 +578,7 @@ p.center {
 }
 
 .pb-01 {
-  padding-bottom: 1.85rem;
+  padding-bottom: 2.3rem;
 }
 .mt-2 {
   margin-top: 0.2rem;
