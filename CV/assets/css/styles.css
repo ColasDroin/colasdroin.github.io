@@ -28,7 +28,7 @@
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes ==========*/
+  /*========== Margins ==========*/
   --mb-1: 0.5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
@@ -81,6 +81,7 @@ body.scale-cv {
   --h2-font-size: 0.938rem;
   --h3-font-size: 0.875rem;
   --normal-font-size: 0.88rem;
+  --mid-font-size: 0.84rem;
   --small-font-size: 0.82rem;
   --smaller-font-size: 0.693rem;
 }
@@ -114,36 +115,6 @@ body.scale-cv {
   display: block;
 }
 
-.scale-cv .bd-container {
-  max-width: 595px;
-}
-
-.scale-cv .section {
-  padding: 0.25rem 0;
-}
-
-.scale-cv .section-title {
-  margin-bottom: 0.5rem;
-}
-
-
-.scale-cv .resume__left{
-  padding-left: 2rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-}
-
-.scale-cv .resume__right{
-  padding-right: 2rem;
-  padding-left: 0.75rem;
-  padding-top: 0.5rem;
-}
-
-
-.scale-cv .home__img {
-  width: 90px;
-  height: 90px;
-}
 
 .scale-cv .home__container {
   gap: 0.25rem;
@@ -154,9 +125,11 @@ body.scale-cv {
 }
 
 .scale-cv .home__address,
-.scale-cv .social__container,
-.scale-cv .award__container {
+.scale-cv .social__container {
   gap: 0.5rem;
+}
+.scale-cv .award__container {
+  gap: 1rem;
 }
 
 .scale-cv .home__icon,
@@ -224,6 +197,8 @@ h4,
 ul,
 p {
   margin: 0;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 h1,
@@ -268,15 +243,19 @@ sup {
 
 /*========== CLASS CSS ==========*/
 .section {
-  padding: 0.25rem 0;
+  padding: 0.5rem 0;
 }
 
 .section-top {
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.section-bottom {
+  margin-bottom: 1rem !important;
 }
 
 .upper-section-top {
-  margin-top: 1.5rem;
+  margin-top: 1.3rem;
 }
 
 .section-title {
@@ -290,7 +269,11 @@ sup {
 }
 
 p.upper-space {
-  margin-top: 1rem;
+  margin-top: 0.4rem;
+}
+
+p.small {
+  font-size: var(--small-font-size);
 }
 
 p.center {
@@ -300,20 +283,15 @@ p.center {
 
 /* To adjust icon location */
  .iconify {
-  font-size: 1.0rem;
+  font-size: 1.8rem;
   margin-right: 0.1rem;
-  margin-left: 0rem;
-  position: relative;
-  top: 5px;
-}
-
-.iconify2 {
   margin-left: 1rem;
+  margin-top: 0.25rem;
+  position: relative;
+  top: 10px;
 }
 
-.iconify3 {
-  margin-bottom: 2.9rem;
-} 
+
 
 .corr_ref_icons {
   position: relative;
@@ -334,7 +312,7 @@ p.center {
 }
 
 .scale-cv .space-award {
-  margin-top:3.6rem;
+  margin-top:7rem;
 }
 
 .scale-cv h4{
@@ -345,19 +323,19 @@ p.center {
 
 
 /*========== LAYOUT ==========*/
-.bd-container {
+.main-container {
   max-width: 968px;
   width: calc(100% - 3rem);
   margin-left: auto;
   margin-right: auto;
 }
 
-.bd-grid {
+.main-grid {
   display: grid;
   gap: 1rem;
 }
 
-.bd-grid-link {
+.main-grid-link {
   display: grid;
   column-gap: 0rem;
   row-gap: 0.rem;
@@ -387,21 +365,24 @@ p.center {
 
 .home__title {
   font-size: var(--h1-font-size);
+  margin: auto;
 }
 
 .home__profession {
   font-size: var(--normal-font-size);
   margin-bottom: var(--mb-);
+  margin: auto;
 }
 
 .home__address {
   gap: 0.5rem;
+  margin-top: 1rem;
 }
 
-.home__information {
+.home__information, .award__information {
   display: flex;
   align-items: center;
-  font-size: var(--small-font-size);
+  font-size: var(--mid-font-size);
 }
 
 .home__icon {
@@ -412,7 +393,11 @@ p.center {
 
 
 /*========== SOCIAL AND AWARDS ==========*/
-.social__container, .award__container {
+.social__container {
+  gap: 0.5rem;
+}
+
+.award__container {
   /* grid-template-columns: max-content; */
   gap: 1rem;
 }
@@ -495,6 +480,7 @@ p.center {
 .education__title,
 .experience__title {
   font-size: var(--h3-font-size);
+  text-align: initial;
 }
 
 .education__studies,
@@ -510,10 +496,9 @@ p.center {
 
 /*========== SKILLS AND LANGUAGES ==========*/
 .scale-cv .space-skills {
-  margin-top:1.4rem;
+  margin-top:5rem;
 }
 
-.skills__content,
 .languages__content {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -570,7 +555,7 @@ p.center {
 }
 
 .mt-1 {
-  margin-top: 0.5rem;
+  margin-top: 4.7rem;
 }
 
 .pb-1 {
@@ -578,7 +563,7 @@ p.center {
 }
 
 .pb-01 {
-  padding-bottom: 2.3rem;
+  padding-bottom: 0.5rem;
 }
 .mt-2 {
   margin-top: 0.2rem;
@@ -595,8 +580,9 @@ p.center {
   margin-bottom: var(--mb-1);
 }
 
-/*========== REFERENCES ==========*/
-.references__content {
+/*========== REFERENCES AND SKILLS ==========*/
+.references__content, 
+.skills__content {
   gap: 0.25rem;
 }
 
@@ -678,14 +664,12 @@ p.center {
   }
 
   .resume__left {
+    /* Different color for left side */
     background-color: var(--container-color-alt);
-  }
-
-  .resume__left {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 2.2rem;
+    padding-right: 1.2rem;
     
   }
 
@@ -693,9 +677,10 @@ p.center {
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
-    padding-right: 3rem;
+    padding-right: 2rem;
     
   }
+
   .generate-pdf {
     display: inline-block;
   }

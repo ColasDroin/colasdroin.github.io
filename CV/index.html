@@ -23,21 +23,21 @@
     <title>CV Colas Droin</title>
   </head>
   <body>
-    <main class="l-main bd-container">
+    <main class="main-container">
       <!-- All elements within this div, is generated in PDF -->
       <div class="resume" id="area-cv">
         <div class="resume__left">
           <!--========== HOME ==========-->
-          <section class="home section-top upper-section-top" id="home">
-            <div class="home__container section bd-grid">
-              <div class="home__data bd-grid">
+          <section class="home upper-section-top" id="home">
+            <div class="home__container section main-grid">
+              <div class="home__data main-grid">
                 <img src="assets/img/profile.jpg" alt="" class="home__img" />
 
                 <h1 class="home__title">COLAS <strong>DROIN</strong></h1>
                 <h3 class="home__profession">Data scientist</h3>
               </div>
 
-              <div class="home__address bd-grid">
+              <div class="home__address main-grid">
                 <span class="home__information">
                   <i class="bx bx-map home__icon"></i> Geneva - Switzerland
                 </span>
@@ -57,14 +57,12 @@
               </div>
             </div>
 
-            <!-- Theme change button -->
             <i
               class="bx bx-moon change-theme"
               title="Theme"
               id="theme-button"
             ></i>
 
-            <!-- Button to generate and download the pdf. Available for desktop. -->
             <i
               class="bx bx-download generate-pdf"
               title="Generate PDF"
@@ -73,9 +71,9 @@
           </section>
 
           <!--========== PROFILE ==========-->
-          <section class="profile section" id="profile">
+          <section class="section" id="profile">
             <h2 class="section-title"><strong>Profile</strong></h2>
-            <p class="profile__description">
+            <p class="small">
               Data scientist with a background in computational physics, my main
               interests include data visualization, machine learning and web
               development.
@@ -86,14 +84,14 @@
           <section class="education section" id="education">
             <h2 class="section-title"><strong>Education</strong></h2>
 
-            <div class="education__container bd-grid">
+            <div class="education__container main-grid">
               <div class="education__content">
                 <div class="education__time">
                   <span class="education__rounder"></span>
                   <span class="education__line"></span>
                 </div>
 
-                <div class="education__data bd-grid">
+                <div class="education__data main-grid">
                   <h3 class="education__title">
                     PhD in computational biophysics
                   </h3>
@@ -110,13 +108,10 @@
                   <span class="education__line"></span>
                 </div>
 
-                <div class="education__data bd-grid">
-                  <h3 class="education__title">
-                    MSc in computer science and physics of complex systems
-                  </h3>
+                <div class="education__data main-grid">
+                  <h3 class="education__title">MSc in computational physics</h3>
                   <span class="education__studies"
-                    >École Normale Supérieure (ENS) <br />
-                    de Lyon</span
+                    >École Normale Supérieure (ENS) de Lyon</span
                   >
                   <span class="education__year">2015 - 2016</span>
                 </div>
@@ -127,7 +122,7 @@
                   <span class="education__rounder"></span>
                 </div>
 
-                <div class="education__data bd-grid">
+                <div class="education__data main-grid">
                   <h3 class="education__title">
                     MS in biomathematics and bioinformatics
                   </h3>
@@ -145,7 +140,7 @@
           <section class="social section">
             <h2 class="section-title section-top"><strong>SOCIAL</strong></h2>
 
-            <div class="social__container bd-grid">
+            <div class="social__container main-grid">
               <a
                 href="https://www.linkedin.com/in/colas-droin/"
                 target="_blank"
@@ -184,10 +179,12 @@
 
           <!--========== AWARDS ==========-->
           <section class="award section">
-            <h2 class="section-title space-award"><strong>AWARDS</strong></h2>
+            <h2 class="section-title space-award pb-01">
+              <strong>AWARDS</strong>
+            </h2>
 
-            <div class="award__container bd-grid">
-              <span class="home__information">
+            <div class="award__container main-grid">
+              <span class="award__information">
                 <i class="award__icon bx bxs-award award__icon"></i>
                 <div>
                   First prize, WEkEO geospatial hackaton. 2.5k€ reward
@@ -202,7 +199,7 @@
                 </div></span
               >
 
-              <span class="home__information">
+              <span class="award__information">
                 <i class="award__icon bx bxs-award award__icon"></i>
                 First prize, CERN webfest (2022) <br /><sup>
                   <a
@@ -214,7 +211,7 @@
                 ></span
               >
 
-              <span class="home__information">
+              <span class="award__information">
                 <i class="award__icon bx bx-spreadsheet award__icon"></i>
                 Amongst top cited paper of <br />
                 Nature Metabolism (in 2021)<sup>
@@ -227,7 +224,7 @@
                 ></span
               >
 
-              <span class="home__information">
+              <span class="award__information">
                 <i class="award__icon bx bxs-graduation award__icon"></i>
                 <div>
                   EPFL Outstanding PhD Thesis Distinction, Top 8% (2020)<sup>
@@ -240,73 +237,42 @@
                   >
                 </div></span
               >
-              <span class="home__information">
+              <span class="award__information">
                 <i class="award__icon bx bxs-award award__icon"></i>
                 Organizers prize, LauzHack 5.0, Lausanne (2020)</span
               >
-              <span class="home__information">
+              <span class="award__information">
                 <i class="award__icon bx bxs-award award__icon"></i>
                 Best poster award, DDay, CHUV Lausanne (2019)</span
               >
-              <span class="home__information">
+              <span class="award__information">
                 <i class="award__icon bx bxs-award award__icon"></i>
                 Best poster award, EPFL Physics days (2018)</span
               >
             </div>
           </section>
 
-          <!--========== COURSES ==========-->
-          <!-- <section class="social section">
-            <h2 class="section-title section-top">
-              <strong>Courses</strong>
-            </h2>
-
-            <div class="social__container bd-grid">
-              Relevant PhD courses taken:
-
-              <span class="home__information">
-                <i class="bx bxs-circle experience__icon"></i>
-                EE-559 Deep learning</span
-              >
-
-              <span class="home__information">
-                <i class="bx bxs-circle experience__icon"></i>
-                CS-433 Machine Learning</span
-              >
-
-              <span class="home__information">
-                <i class="bx bxs-circle experience__icon"></i>
-                COM-480 Data viz</span
-              >
-
-              <span class="home__information">
-                <i class="bx bxs-circle experience__icon"></i>
-                Better coding practices (Swiss Institute of Bioinformatics
-                course)</span
-              >
-            </div>
-          </section> -->
-
           <!--========== LANGUAGES  ==========-->
-          <section class="skills section" id="skills">
+          <section class="language section" id="languages">
             <h2 class="section-title section-top">
               <strong>Languages</strong>
             </h2>
 
-            <span class="iconify" data-icon="fxemoji:franceflag"></span>,
+            <span class="iconify" data-icon="fxemoji:franceflag"></span>: native
+            <br />
             <span class="iconify" data-icon="twemoji:flag-united-kingdom"></span
-            >: fluent
-            <span class="iconify iconify2" data-icon="twemoji:flag-spain"></span
-            >: conversational
+            >: fluent <br />
+            <span class="iconify" data-icon="twemoji:flag-spain"></span>:
+            conversational
           </section>
 
           <!--========== THINGS I WANT TO PROGRESS WITH==========-->
           <section class="interests section">
-            <h2 class="section-title section-top">
+            <h2 class="section-title section-top pb-01">
               <strong>Learning</strong>
             </h2>
             Things I'm learning/want to learn:
-            <div class="interests__container bd-grid">
+            <div class="interests__container main-grid">
               <div class="interests__content">
                 <i class="si si-d3dotjs interests__icon"></i>
                 <span class="interests__name">D3</span>
@@ -323,27 +289,27 @@
           </section>
 
           <!--========== PUBLICATIONS ==========-->
-          <section class="social section">
-            <h2 class="section-title section-top">
+          <section class="publications section">
+            <h2 class="section-title section-top pb-01">
               <strong>Publications</strong>
             </h2>
 
-            <div class="social__container bd-grid">
+            <div class="publications__container main-grid">
               Main publications (first author):
 
-              <span class="home__information">
+              <span class="publication__information">
                 <i class="bx bxs-circle experience__icon"></i>
                 <em>Nature Metabolism</em>, 2020</span
               >
 
-              <span class="home__information">
+              <span class="publication__information">
                 <i class="bx bxs-circle experience__icon"></i>
                 <em>Nature Physics</em>, 2019</span
               >
             </div>
 
             <!--========== CHECK ONLINE STATEMENT ==========-->
-            <hr class="check-online" />
+            <hr class="check-online mt-1" />
             <p class="check-online">
               <em>Check the online version of this CV at:</em>
               <a
@@ -353,7 +319,7 @@
                 >colasdroin.github.io/CV/</a
               >
             </p>
-            <div class="pb-01"></div>
+            <div class="pb-1"></div>
           </section>
         </div>
 
@@ -363,16 +329,18 @@
             class="experience section section-top upper-section-top"
             id="experience"
           >
-            <h2 class="section-title"><strong>Experience</strong></h2>
+            <h2 class="section-title section-bottom">
+              <strong>Experience</strong>
+            </h2>
 
-            <div class="experience__container bd-grid">
+            <div class="experience__container main-grid">
               <div class="experience__content">
                 <div class="experience__time">
                   <span class="experience__rounder"></span>
                   <span class="experience__line"></span>
                 </div>
 
-                <div class="experience__data bd-grid">
+                <div class="experience__data main-grid">
                   <h3 class="experience__title">
                     SENIOR FELLOW - SCIENTIFIC PROGRAMMER
                   </h3>
@@ -401,6 +369,11 @@
                     observables, now used by the group to assess a collider
                     viability before simulations.
                   </p>
+                  <p class="center">
+                    <i class="bx bxs-circle experience__icon"></i>
+                    <i class="bx bxs-circle experience__icon"></i>
+                    <i class="bx bxs-circle experience__icon"></i>
+                  </p>
                   <p>
                     <strong>Skills involded: </strong>
                     Unit testing. Docker containerization for HPC cluster
@@ -416,7 +389,7 @@
                   <span class="experience__line"></span>
                 </div>
 
-                <div class="experience__data bd-grid">
+                <div class="experience__data main-grid">
                   <h3 class="experience__title">
                     DATA VISUALIZATION SPECIALIST
                   </h3>
@@ -438,6 +411,11 @@
                     rodent lipid brain composition. The app is now actively used
                     in the lab to explore the dataset and generate hypotheses.
                   </p>
+                  <p class="center">
+                    <i class="bx bxs-circle experience__icon"></i>
+                    <i class="bx bxs-circle experience__icon"></i>
+                    <i class="bx bxs-circle experience__icon"></i>
+                  </p>
                   <p>
                     <strong>Skills involded: </strong>
 
@@ -454,7 +432,7 @@
                   <span class="experience__line"></span>
                 </div>
 
-                <div class="experience__data bd-grid">
+                <div class="experience__data main-grid">
                   <h3 class="experience__title">RESEARCHER</h3>
                   <span class="experience__company"
                     >Sep. 2016 - Dec. 2020 | Computational Systems Biology Lab,
@@ -476,6 +454,11 @@
                     >
                     as a result.
                   </p>
+                  <p class="center">
+                    <i class="bx bxs-circle experience__icon"></i>
+                    <i class="bx bxs-circle experience__icon"></i>
+                    <i class="bx bxs-circle experience__icon"></i>
+                  </p>
                   <p>
                     <strong>Skills involded: </strong>
 
@@ -494,7 +477,7 @@
                   <!-- <span class="experience__line"></span> -->
                 </div>
 
-                <div class="experience__data bd-grid">
+                <div class="experience__data main-grid">
                   <h3 class="experience__title">MASTER THESES</h3>
                   <span class="experience__company"
                     ><i class="bx bxs-circle experience__icon"></i>Spring 2016 |
@@ -518,77 +501,25 @@
             </div>
           </section>
           <br />
-          <!--========== TA EXPERIENCE ==========-->
-          <!-- <section class="references section" id="references">
-            <h2 class="section-title">
-              <strong>TEACHING EXPERIENCE</strong>
-            </h2>
-            <p>
-              <i class="bx bxs-circle experience__icon"></i><em>Head TA</em>,
-              Dynamical systems in biology, EPFL (Autumns 2017-2019)
-            </p>
-            <p>
-              <i class="bx bxs-circle experience__icon"></i>TA, Probabilities
-              and statistics, EPFL (Spring 2017)
-            </p>
-            <p>
-              <i class="bx bxs-circle experience__icon"></i>
-              Tutor, Mathematical physics, INSA (2012 to 2014)
-            </p>
-          </section> -->
-
-          <!-- ========== TALKS ==========
-          <section class="certificate section" id="certificates">
-            <h2 class="section-title"><strong>Main talks</strong></h2>
-
-            <div class="certificate__container bd-grid">
-              <div class="certificate__content">
-                <p class="certificate__description">
-                  <em>
-                    RNA velocity-based inference of cell cycle, Physics of
-                    living systems</em
-                  >, Physics of living systems, EPFL, Switzerland. 17/07/2020.
-                </p>
-                <p class="certificate__description">
-                  <em>
-                    Understanding the space-time logic of the mammalian liver
-                    with mixed-models</em
-                  >, SSS, EPFL, Switzerland. 12/12/2019.
-                </p>
-                <p class="certificate__description">
-                  <em
-                    >Low-dimensional Dynamics of Two Coupled Biological
-                    Oscillators</em
-                  >, Comp- SysBio, CNRS, Aussois, France. 03/04/2019.
-                </p>
-                <p class="certificate__description">
-                  <em
-                    >A reconstruction of the phase dynamics of interacting
-                    cell-cycle and circadian clock</em
-                  >, SSBSS, Cambridge, UK. 20/07/2017.
-                </p>
-              </div>
-            </div>
-          </section> -->
 
           <!--========== DATA SCIENCE SKILLS ==========-->
 
-          <section class="references section" id="references">
+          <section class="skills section" id="references">
             <h2 class="section-title space-skills">
               <strong>DATA SCIENCE skills</strong>
             </h2>
-            <p>
+            <p class="upper-space">
               <strong>Statistical learning:</strong> Proficient with a broad
               spectrum of machine learning methods, including deep learning and
               Bayesian inference.
             </p>
-            <p>
+            <p class="upper-space">
               <strong>Data wrangling:</strong> Worked with many data formats,
               including high-dimensional large datasets with missing values.
               Used to clean and preprocess data, and perform dimensionality
               reduction.
             </p>
-            <p>
+            <p class="upper-space">
               <strong>Data visualization</strong>: Good knowledge of design
               principles, with a taste for meaningful, aesthetic visualization.
               Preference for vector graphics, but also familiar with image
@@ -599,18 +530,18 @@
               <i class="bx bxs-circle experience__icon"></i>
               <i class="bx bxs-circle experience__icon"></i>
             </p>
-            <p>
+            <p class="upper-space">
               <strong>Languages: </strong>
               Python, with occasional use of R, Matlab and Julia. Used C/C++ in
               the past (Master thesis).
             </p>
-            <p>
+            <p class="upper-space">
               <strong>Python packages: </strong>
               Numpy, Scipy, Numba, Pandas, Dash, Scikit-learn, Pytorch,
               Statsmodels, Ipywidgets, Beautiful Soup, Jinja2, openCV,
               Matplotlib, Seaborn, Plotly.
             </p>
-            <p>
+            <p class="upper-space">
               <strong>Visualization tools: </strong>
               Adobe Photoshop, Adobe Illustrator, Processing/p5.js
               (entry-level), D3.js (entry-level, learning).
@@ -618,7 +549,7 @@
           </section>
 
           <!--========== WEB DEVELOPMENT SKILLS ==========-->
-          <section class="references section" id="references">
+          <section class="skills section" id="references">
             <h2 class="section-title">
               <strong>WEB DEVELOPMENT skills</strong>
             </h2>
@@ -668,10 +599,10 @@
               with HTML/CSS. Limited knowledge of JS frameworks, but actively
               learning (cf. left panel).
             </p>
-            <div class="skills__container bd-grid">
-              <div class="references__content bd-grid">
+            <div class="skills__container main-grid">
+              <div class="skills__content main-grid">
                 <i class="skill__icon_smaller center si si-plotly"></i>
-                <p class="references__title center">Dash (Plotly)</p>
+                <p class="skills__title center">Dash (Plotly)</p>
                 <div class="center">
                   <i class="bx bxs-circle color-blue"></i>
                   <i class="bx bxs-circle color-blue"></i>
@@ -681,9 +612,9 @@
                 </div>
               </div>
 
-              <div class="references__content bd-grid">
+              <div class="skills__content main-grid">
                 <i class="skill__icon_smaller center bx bxl-html5"></i>
-                <p class="references__title center">HTML</p>
+                <p class="skills__title center">HTML</p>
                 <div class="center">
                   <i class="bx bxs-circle color-blue"></i>
                   <i class="bx bxs-circle color-blue"></i>
@@ -693,9 +624,9 @@
                 </div>
               </div>
 
-              <div class="references__content bd-grid">
+              <div class="skills__content main-grid">
                 <i class="skill__icon_smaller center bx bxl-css3"></i>
-                <p class="references__title center">CSS</p>
+                <p class="skills__title center">CSS</p>
                 <div class="center">
                   <i class="bx bxs-circle color-blue"></i>
                   <i class="bx bxs-circle color-blue"></i>
@@ -705,9 +636,9 @@
                 </div>
               </div>
 
-              <div class="references__content bd-grid">
+              <div class="skills__content main-grid">
                 <i class="skill__icon_smaller center bx bxl-javascript"></i>
-                <p class="references__title center">Javascript</p>
+                <p class="skills__title center">Javascript</p>
                 <div class="center">
                   <i class="bx bxs-circle color-blue"></i>
                   <i class="bx bxs-circle color-blue"></i>
@@ -720,7 +651,7 @@
           </section>
 
           <!--========== SOFTWARE ENGINEERING SKILLS ==========-->
-          <section class="references section" id="references">
+          <section class="skills section" id="references">
             <h2 class="section-title">
               <strong>SOFTWARE ENGINEERING skills</strong>
             </h2>
@@ -728,39 +659,26 @@
               Experienced Python developper (8y+), favouring OOP and type
               hinting for better linting. VSCode/Ruff user.
             </p>
-            <p>
+            <p class="upper-space">
               <strong>Development cycle: </strong>
-              Git, Github, Poetry, Pytest, Docker, Gitlab CI/CD
+              Git, Github, Poetry, Pytest, Docker, CI/CD
             </p>
-            <p>
+            <p class="upper-space">
               <strong>High Performance Computing</strong>
               SLURM and HTCondor
             </p>
-            <p>
+            <p class="upper-space">
               <strong>OS: </strong>
               OS X, Linux (remote development), Windows (occasionally)
             </p>
           </section>
 
-          <!--========== SOFT SKILLS ==========-->
-          <!-- <section class="references section" id="references">
-            <h2 class="section-title">
-              <strong>SOFT skills</strong>
-            </h2>
-            <p>
-              Advanced problem-solving solving skills. Used to work with strict
-              deadlines. Excellent communication (involved in several
-              international collaborations, including conferences and poster
-              presentations). Autonomous with a collaborative spirit.
-            </p>
-          </section> -->
-
           <!--========== REFERENCES ==========-->
           <section class="references section" id="references">
             <h2 class="section-title"><strong>References</strong></h2>
 
-            <div class="references__container bd-grid">
-              <div class="references__content bd-grid">
+            <div class="references__container main-grid">
+              <div class="references__content main-grid">
                 <h3 class="references__title">Felix Naef</h3>
                 <span class="references__subtitle">Full Professor</span>
                 <ul class="references__contact">
@@ -775,7 +693,7 @@
                 </ul>
               </div>
 
-              <div class="references__content bd-grid">
+              <div class="references__content main-grid">
                 <h3 class="references__title">Gioele La Manno</h3>
                 <span class="references__subtitle">Associate Professor</span>
                 <ul class="references__contact">
@@ -790,7 +708,7 @@
                 </ul>
               </div>
 
-              <div class="references__content bd-grid">
+              <div class="references__content main-grid">
                 <h3 class="references__title">Guido Sterbini</h3>
                 <span class="references__subtitle">CERN staff physicist</span>
                 <ul class="references__contact">
@@ -813,8 +731,8 @@
               <strong>LINKS</strong>
             </h2>
 
-            <div class="link__container bd-grid">
-              <div class="link__content bd-grid">
+            <div class="link__container main-grid">
+              <div class="link__content main-grid">
                 <div>
                   1:
                   <a
@@ -852,7 +770,7 @@
                   >
                 </div>
               </div>
-              <div class="link__content bd-grid">
+              <div class="link__content main-grid">
                 <div>
                   5:
                   <a
@@ -891,7 +809,7 @@
                   </a>
                 </div>
               </div>
-              <div class="link__content bd-grid">
+              <div class="link__content main-grid">
                 <div>
                   9:
                   <a
