@@ -411,11 +411,16 @@ p.center {
 
 .sup__link {
   display: inline-flex;
+  justify-content: flex-start;
   align-items: center;
   font-size: x-small;
   color: var(--text-color);
 }
 
+.no-justify {
+  text-justify: none;
+  display: inline-block;
+}
 
 .social__link:hover, .award__link:hover {
   color: var(--title-color);
@@ -555,11 +560,11 @@ p.center {
 }
 
 .mt-1 {
-  margin-top: 4.7rem;
+  margin-top: 3.7rem;
 }
 
-.pb-1 {
-  padding-bottom: 2.2rem;
+.final-padding-bottom {
+  padding-bottom: 4rem;
 }
 
 .pb-01 {
