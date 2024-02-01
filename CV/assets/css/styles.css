@@ -281,6 +281,9 @@ p.center {
   margin: auto;
 }
 
+
+
+
 /* To adjust icon location */
  .iconify {
   font-size: 1.8rem;
@@ -438,6 +441,11 @@ p.center {
   margin-right: 0.5rem;
 }
 
+.center-dots {
+  display: flex;
+  align-items: center;
+}
+
 /*========== PROFILE ==========*/
 .profile__description {
   text-align: initial;
@@ -486,6 +494,8 @@ p.center {
 .experience__title {
   font-size: var(--h3-font-size);
   text-align: initial;
+  display: flex;
+  justify-content: space-between;
 }
 
 .education__studies,
@@ -561,6 +571,13 @@ p.center {
 
 .mt-1 {
   margin-top: 3.7rem;
+}
+
+.mt-01 {
+  margin-top: 0.7rem;
+}
+.mb-01 {
+  margin-bottom: 0.7rem;
 }
 
 .final-padding-bottom {
